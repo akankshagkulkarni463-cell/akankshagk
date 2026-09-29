@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TruthLens | AI-Powered Credibility Analysis</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo-area">
+            <div class="logo-icon">◉</div>
+
+            <div>
+                <h1>TruthLens</h1>
+                <span>AI-Powered Credibility Analysis</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#how-it-works">How It Works</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span class="status-dot"></span>
+                    AI-POWERED NEWS VERIFICATION
+                </div>
+
+                <h2>
+                    See Beyond the
+                    <span>Headline.</span>
+                </h2>
+
+                <p>
+                    Analyze news content with AI and uncover signals
+                    that help you understand whether information is
+                    potentially reliable or misleading.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" onclick="scrollToAnalysis()">
+                        Start Analysis
+                        <span>→</span>
+                    </button>
+
+                    <button class="secondary-btn" onclick="showHowItWorks()">
+                        How It Works
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="lens-card">
+
+                    <div class="lens-top">
+                        <span>TRUTHLENS ANALYSIS</span>
+                        <span class="live">● LIVE</span>
+                    </div>
+
+                    <div class="scan-circle">
+
+                        <div class="scan-inner">
+                            <div class="check-mark">✓</div>
+                        </div>
+
+                    </div>
+
+                    <div class="analysis-status">
+                        <span class="green-indicator"></span>
+                        Analysis Ready
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ANALYSIS ================= -->
+
+        <section class="analysis-section" id="analysis">
+
+            <div class="section-heading">
+
+                <div class="small-label">
+                    CHOOSE YOUR INPUT
+                </div>
+
+                <h2>
+                    What would you like to <span>analyze?</span>
+                </h2>
+
+                <p>
+                    Select a content type below to begin your credibility analysis.
+                </p>
+
+            </div>
+
+
+            <div class="analysis-grid">
+
+
+                <!-- TEXT CARD -->
+
+                <div class="analysis-card text-card"
+                     onclick="openAnalysis('text')">
+
+                    <div class="card-icon text-icon">
+                        T
+                    </div>
+
+                    <div class="card-content">
+
+                        <div class="card-title-row">
+
+                            <h3>Text Analysis</h3>
+
+                            <span class="arrow">→</span>
+
+                        </div>
+
+                        <p>
+                            Analyze headlines, articles, claims,
+                            and news text using AI-powered analysis.
+                        </p>
+
+                        <div class="card-tag">
+                            TF-IDF + ML
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IMAGE CARD -->
+
+                <div class="analysis-card image-card"
+                     onclick="openAnalysis('image')">
+
+                    <div class="card-icon image-icon">
+                        ◫
+                    </div>
+
+                    <div class="card-content">
+
+                        <div class="card-title-row">
+
+                            <h3>Image Analysis</h3>
+
+                            <span class="arrow">→</span>
+
+                        </div>
+
+                        <p>
+                            Upload a news image and examine its
+                            content for potential misinformation signals.
+                        </p>
+
+                        <div class="card-tag">
+                            IMAGE + OCR
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VIDEO CARD -->
+
+                <div class="analysis-card video-card"
+                     onclick="openAnalysis('video')">
+
+                    <div class="card-icon video-icon">
+                        ▶
+                    </div>
+
+                    <div class="card-content">
+
+                        <div class="card-title-row">
+
+                            <h3>Video Analysis</h3>
+
+                            <span class="arrow">→</span>
+
+                        </div>
+
+                        <p>
+                            Analyze news videos and identify
+                            potentially misleading visual or textual signals.
+                        </p>
+
+                        <div class="card-tag">
+                            VIDEO ANALYSIS
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="section-heading">
+
+                <div class="small-label">
+                    ABOUT TRUTHLENS
+                </div>
+
+                <h2>
+                    Understanding information with
+                    <span>AI.</span>
+                </h2>
+
+                <p>
+                    TruthLens is an explainable AI framework designed
+                    to help users analyze digital news content and
+                    understand the signals behind an AI prediction.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">01</div>
+
+                    <h3>Detect</h3>
+
+                    <p>
+                        Machine learning models analyze content
+                        and identify patterns associated with
+                        potentially misleading information.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">02</div>
+
+                    <h3>Analyze</h3>
+
+                    <p>
+                        Text, images and videos can be processed
+                        through the appropriate analysis pipeline.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">03</div>
+
+                    <h3>Explain</h3>
+
+                    <p>
+                        Explainable AI techniques help provide
+                        insight into why a prediction was generated.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="how-section" id="how-it-works">
+
+            <div class="section-heading">
+
+                <div class="small-label">
+                    THE PROCESS
+                </div>
+
+                <h2>
+                    How <span>TruthLens</span> works
+                </h2>
+
+            </div>
+
+
+            <div class="process">
+
+                <div class="process-step">
+
+                    <div class="process-circle">01</div>
+
+                    <h3>Select</h3>
+
+                    <p>
+                        Choose text, image, or video analysis.
+                    </p>
+
+                </div>
+
+
+                <div class="process-line"></div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">02</div>
+
+                    <h3>Analyze</h3>
+
+                    <p>
+                        The selected content is processed
+                        by the analysis system.
+                    </p>
+
+                </div>
+
+
+                <div class="process-line"></div>
+
+
+                <div class="process-step">
+
+                    <div class="process-circle">03</div>
+
+                    <h3>Understand</h3>
+
+                    <p>
+                        View the prediction, confidence,
+                        and supporting signals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div class="modal-overlay" id="analysisModal">
+
+        <div class="analysis-modal">
+
+            <button class="close-btn" onclick="closeModal()">
+                ×
+            </button>
+
+            <div class="modal-icon" id="modalIcon">
+                T
+            </div>
+
+            <div class="small-label" id="modalLabel">
+                TEXT ANALYSIS
+            </div>
+
+            <h2 id="modalTitle">
+                Analyze News Text
+            </h2>
+
+            <p id="modalDescription">
+                Enter a news article, headline, or claim below.
+            </p>
+
+
+            <!-- TEXT INPUT -->
+
+            <div id="textInputArea">
+
+                <textarea
+                    id="newsText"
+                    placeholder="Paste a headline, article, or news claim here..."
+                ></textarea>
+
+                <button class="analyze-btn" onclick="analyzeText()">
+                    Analyze Text
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <!-- IMAGE INPUT -->
+
+            <div id="imageInputArea" class="hidden">
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+                        ↑
+                    </div>
+
+                    <h3>Upload a news image</h3>
+
+                    <p>
+                        JPG, JPEG, PNG
+                    </p>
+
+                    <input
+                        type="file"
+                        id="imageFile"
+                        accept="image/*"
+                    >
+
+                </div>
+
+                <button class="analyze-btn">
+                    Analyze Image
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <!-- VIDEO INPUT -->
+
+            <div id="videoInputArea" class="hidden">
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+                        ▶
+                    </div>
+
+                    <h3>Upload a news video</h3>
+
+                    <p>
+                        MP4, MOV, AVI
+                    </p>
+
+                    <input
+                        type="file"
+                        id="videoFile"
+                        accept="video/*"
+                    >
+
+                </div>
+
+                <button class="analyze-btn">
+                    Analyze Video
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div id="resultArea" class="result-area hidden">
+
+                <div id="resultBadge" class="result-badge">
+                    ANALYSIS RESULT
+                </div>
+
+                <h3 id="resultTitle">
+                    Analysis Result
+                </h3>
+
+                <p id="resultMessage">
+                    Your analysis result will appear here.
+                </p>
+
+                <div class="confidence-container">
+
+                    <div class="confidence-header">
+                        <span>Confidence</span>
+                        <strong id="confidenceValue">0%</strong>
+                    </div>
+
+                    <div class="confidence-bar">
+                        <div
+                            class="confidence-fill"
+                            id="confidenceFill">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <strong>TruthLens</strong>
+            <span>AI-Powered Credibility Analysis</span>
+        </div>
+
+        <p>
+            © 2026 TruthLens. Explainable AI for responsible information analysis.
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
